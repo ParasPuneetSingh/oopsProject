@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Navbarstyle.css">
+    <title>BITS bids: Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+ .details{
+margin-top: 50px;
+margin-left: 100px;
+ }
+.name, .em, .bal{
+    font-family: Montserrat, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 30px;
+    padding-top: 40px;
+}
+
+.deets{
+    resize: none;
+
+    width: 580px;
+    height: 40px;
+    font-family: Montserrat, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 2px;
+    overflow: hidden;
+}
+
+.addbal{    text-align: center;
+            display:block;
+            font-size: 23px;
+            font-weight: 500;
+            margin-top: 30px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 50px;
+            border: none;
+            background-color: rgb(164, 164, 255);
+            font-family: Montserrat, Georgia, 'Times New Roman', Times, serif;
+
+        }
+        .addbal:hover{
+            cursor: pointer;
+            opacity: 0.8;
+        }
+</style>
+</head>
+
+<body>
+    <div class="navbar">
+        <button class="text" style="display: inline-block; margin-right: 0;">BITS bids</button>
+        <a href="http://127.0.0.1:5500/Page2.html"><button class="buy" style="margin-left: 500px; ">Buyer</button></a>
+            <a href="http://127.0.0.1:5500/seller.html"><button class="sell" style="margin-left: 30px; ">Seller</button></a>
+            <a href="http://127.0.0.1:5500/profile.html"><button class="prof" style="margin-left: 30px; ">Profile</button></a>
+            <a href="http://127.0.0.1:5500/Firstpage(final).html"><button class="logout" style="margin-left: 30px;">Log Out</button></a>
+    </div>
+    <div class="details">
+        <label for="Name" class="name">Name: </label><textarea readonly class="deets"></textarea><br><br><br>
+        <label for="email" class="em">Email: </label><textarea readonly class="deets"></textarea><br><br><br>
+        <label for="number" class="bal">Current Balance (BITScoin): </label><textarea readonly class="deets" style="width: 90px;" ></textarea><br><br>
+        <button class="addbal">Add Balance</button>
+    </div>
+</body>
+</html>

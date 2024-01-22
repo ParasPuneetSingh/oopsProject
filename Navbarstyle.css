@@ -1,0 +1,55 @@
+
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        .bod{
+            background-color: rgb(255, 252, 247);
+        }
+        .text{
+            font-family: Montserrat, Georgia, 'Times New Roman', Times, serif;
+         padding-left: 3px;
+         padding-right: 3px;
+         color: rgb(255, 252, 247);
+         font-size: 40px;
+         margin-right: 0;
+         margin-left: 40px;
+         font-weight: 500;
+         border: none;
+         background-color: black;
+         vertical-align: middle;
+         margin-top: 5px;
+         margin-bottom: 10px;
+         
+        }
+        .navbar{
+            display: block;
+            height: 65px;
+            top: 0;
+            left:0;
+            right: 0;
+            margin:0;
+            padding:0;
+            background-color: black;
+            margin-bottom: 0px;
+        }
+        .buy, .sell, .logout, .prof{
+         font-family: Montserrat, Georgia, 'Times New Roman', Times, serif;
+         height: 63px;
+         width: 80px;
+         color: rgb(118, 194, 229);
+         font-size: 19px;
+         margin-right: 0px;
+         font-weight: 400;
+         border: none;
+         background-color: black;
+         vertical-align: middle;
+         margin-top: 0px;
+        }
+        .buy:hover, .logout:hover, .sell:hover, .prof:hover{
+        border-bottom: 3px solid rgb(118, 194, 229);
+        cursor: pointer;
+        font-weight: 500;
+        }
+
