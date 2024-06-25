@@ -1,15 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="Navbarstyle.css">
     <title>BITS bids: Profile</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
+        .bod{
+            background-color: rgb(255, 252, 247);
+            overflow-y: auto;
+            overflow-x: auto;
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+}
+        .text{
+            font-family: Montserrat, Georgia, 'Times New Roman', Times, serif;
+         padding-left: 3px;
+         padding-right: 3px;
+         color: rgb(255, 252, 247);
+         font-size: 40px;
+         margin-right: 0;
+         margin-left: 40px;
+         font-weight: 500;
+         border: none;
+         background-color: black;
+         vertical-align: middle;
+         margin-top: 5px;
+         margin-bottom: 10px;
+         
+        }
+        .navbar{
+            overflow: hidden;
+            display: block;
+            height: 65px;
+            top: 0;
+            left:0;
+            right: 0;
+            margin:0;
+            padding:0;
+            background-color: black;
+            margin-bottom: 0px;
+        }
+        .buy, .sell, .logout, .prof{
+         font-family: Montserrat, Georgia, 'Times New Roman', Times, serif;
+         height: 63px;
+         width: 80px;
+         color: rgb(118, 194, 229);
+         font-size: 19px;
+         margin-right: 0px;
+         font-weight: 400;
+         border: none;
+         background-color: black;
+         vertical-align: middle;
+         margin-top: 0px;
+        }
+        .buy:hover, .logout:hover, .sell:hover, .prof:hover{
+        border-bottom: 3px solid rgb(118, 194, 229);
+        cursor: pointer;
+        font-weight: 500;
+        }
  .details{
 margin-top: 50px;
-margin-left: 100px;
+padding-left: 100px;
+padding-right: 100px;
+margin-right: 0px;
  }
 .name, .em, .bal{
     font-family: Montserrat, 'Times New Roman', Times, serif;
@@ -53,19 +108,20 @@ margin-left: 100px;
 </style>
 </head>
 
-<body>
+<body class="bod">
     <div class="navbar">
         <button class="text" style="display: inline-block; margin-right: 0;">BITS bids</button>
         <a href="http://127.0.0.1:5500/Page2.html"><button class="buy" style="margin-left: 500px; ">Buyer</button></a>
-            <a href="http://127.0.0.1:5500/seller.html"><button class="sell" style="margin-left: 30px; ">Seller</button></a>
+            <a href="http://127.0.0.1:5500/seller(new).html"><button class="sell" style="margin-left: 30px; ">Seller</button></a>
             <a href="http://127.0.0.1:5500/profile.html"><button class="prof" style="margin-left: 30px; ">Profile</button></a>
             <a href="http://127.0.0.1:5500/Firstpage(final).html"><button class="logout" style="margin-left: 30px;">Log Out</button></a>
     </div>
-    <div class="details">
+    <div style="margin-right: 0px">
+    <div class="details"  style=" padding-bottom: 5px;">
         <label for="Name" class="name">Name: </label><textarea readonly class="deets"></textarea><br><br><br>
         <label for="email" class="em">Email: </label><textarea readonly class="deets"></textarea><br><br><br>
         <label for="number" class="bal">Current Balance (BITScoin): </label><textarea readonly class="deets" style="width: 90px;" ></textarea><br><br>
         <button class="addbal">Add Balance</button>
-    </div>
+    </div></div>
 </body>
 </html>

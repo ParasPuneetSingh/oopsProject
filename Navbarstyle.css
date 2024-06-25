@@ -3,9 +3,13 @@
             margin: 0; 
             padding: 0; 
             box-sizing: border-box; 
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: hidden;   /* Show vertical scrollbar if needed */
         }
         .bod{
             background-color: rgb(255, 252, 247);
+            overflow-x: auto; /* Hide horizontal scrollbar */
+  overflow-y: auto;   /* Show vertical scrollbar if needed */
         }
         .text{
             font-family: Montserrat, Georgia, 'Times New Roman', Times, serif;

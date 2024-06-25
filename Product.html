@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>BITS bids</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+               .bod { 
+            background-color: rgb(255, 252, 247);
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            overflow-y: auto;
+            overflow-x: auto;
+        }
+        .text{
+            font-family: Montserrat, Georgia, 'Times New Roman', Times, serif;
+         padding-left: 3px;
+         padding-right: 3px;
+         color: rgb(255, 252, 247);
+         font-size: 40px;
+         margin-right: 0;
+         margin-left: 40px;
+         font-weight: 500;
+         border: none;
+         background-color: black;
+         vertical-align: middle;
+         margin-top: 5px;
+         margin-bottom: 10px;
+         
+        }
+        .navbar{
+            overflow: hidden;
+            display: block;
+            height: 65px;
+            top: 0;
+            left:0;
+            right: 0;
+            margin:0;
+            padding:0;
+            background-color: black;
+            margin-bottom: 0px;
+        }
+        .buy, .sell, .logout, .prof{
+         font-family: Montserrat, Georgia, 'Times New Roman', Times, serif;
+         height: 63px;
+         width: 80px;
+         color: rgb(118, 194, 229);
+         font-size: 19px;
+         margin-right: 0px;
+         font-weight: 400;
+         border: none;
+         background-color: black;
+         vertical-align: middle;
+         margin-top: 0px;
+        }
+        .buy:hover, .logout:hover, .sell:hover, .prof:hover{
+        border-bottom: 3px solid rgb(118, 194, 229);
+        cursor: pointer;
+        font-weight: 500;
+        }
+        .product{
+        margin-top: 35px;
+        display: block;
+        margin-left: 35px;
+        margin-right: 0px;
+        height: 400px;
+        width: 1000px;
+        border:solid;
+        border-color: white;
+        border-radius: 30px;
+        box-shadow: 3px 3px 20px black;
+        }
+        
+        .desc{
+            margin-left: 45px;
+            margin-top: 25px;
+            display: inline-block;
+            width:500px;
+            height: 180px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-size: 18px;
+            word-wrap: break-word;
+            resize: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .submit{
+            position: absolute;
+            display:inline-block;
+            margin-right: 60px;
+            margin-top: 30px;
+            margin-left: 130px;
+            padding-bottom: 13px;
+            padding-top: 13px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-size: 21px;
+            border-radius: 50px;
+            border: none;
+            background-color: rgb(164, 164, 255);
+            font-family: Montserrat, Georgia, 'Times New Roman', Times, serif;
+
+        }
+        .submit:hover{
+            cursor: pointer;
+            opacity: 0.8;
+        }
+        .enter{
+            margin-left: 45px;
+            margin-top: 50px;
+            display: inline-block;
+            font-size: 20px;
+            font-family: Montserrat, Georgia, 'Times New Roman', Times, serif;
+        }
+        .base{
+            margin-left: 5px;
+            height: 35px;
+            padding-top: 0;
+            padding-left: 2px;
+            padding-bottom: 0;
+            font-size: 20px;
+            width: 100px;
+            font-family: Montserrat, Georgia, 'Times New Roman', Times, serif;
+        }
+        .check{
+        grid-template-columns: 1fr 1fr;
+        }
+
+        base[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+        base:focus{
+            border: none;
+        }
+        
+    </style>
+    </head>
+
+    <body class="bod">
+        <div class="navbar">
+            <button class="text" style="display: inline-block; margin-right: 0;">BITS bids</button>
+            <a href="http://127.0.0.1:5500/Page2.html"><button class="buy" style="margin-left: 500px; ">Buyer</button></a>
+            <a href="http://127.0.0.1:5500/seller.html"><button class="sell" style="margin-left: 30px; ">Seller</button></a>
+            <a href="http://127.0.0.1:5500/profile.html"><button class="prof" style="margin-left: 30px; ">Profile</button></a>
+            <a href="http://127.0.0.1:5500/Firstpage(final).html"><button class="logout" style="margin-left: 30px;">Log Out</button></a>
+        </div>
+        <div style="padding-bottom: 40px; padding-right: 90px;">
+        <div class="product">
+            <input class="base" type="text" readonly style="width: 400px; margin-left: 45px; border: none; margin-top: 30px; height: 45px; font-size: 28px;">
+            
+            <div class="check" style="display: grid;">
+            <textarea class="desc" readonly placeholder="Product description"></textarea>
+            </div>
+
+            <p class="enter" style="display: inline-block;">Minimum bid: &#8377;</p>
+            <input class="base" readonly types="number" style="display: inline-block;">
+            <p class="enter" style="display: inline-block; margin-left: 70px;">Enter your bid: &#8377;</p>
+            <input class="base" type="number" style="display: inline-block; ">
+            <button class="submit">SUBMIT</button>
+        </div></div>
+    </body>
+</html>
